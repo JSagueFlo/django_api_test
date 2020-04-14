@@ -20,7 +20,5 @@ def test_raw_only_values(request):
     Returns a list of model values
     '''
     testdata = testrawmodel.objects.all().values()
-    print(testdata)
     testdata_list = list(testdata)
-    print(testdata_list)
     return JsonResponse( testdata_list, safe=False )
