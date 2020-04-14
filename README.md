@@ -11,10 +11,12 @@ There will be 3 endpoints for this API:
 This endpoint uses rest_framework package utilities in order to parse data from the database
 
 ### GET raw/test/
-This endpoint just serializes raw model data from database
+This endpoint just serializes raw model data from database  
+This is a simple function returning an HttpResponse, please note that this can be done using Class-based views aswell
 
 ### GET raw/test2/
-This endpoint parses model data values from database and returns it as a list of objects
+This endpoint parses model data values from database and returns it as a list of objects  
+This is a simple function returning a JsonResponse, please note that this can be done using Class-based views aswell
 
 ## Setting up the enviroment
 **Note:** The enviroment setup must be done **outside** the project directory
